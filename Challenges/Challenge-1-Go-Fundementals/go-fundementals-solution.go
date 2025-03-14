@@ -27,7 +27,6 @@ func mathOperations(x int, y int) (int, int, int, float64) {
 		quotient = float64(x) / float64(y)
 	} else {
 		fmt.Println("Warning: Division by zero is not allowed.")
-		quotient = 0.0
 	}
 	return sum, product, diffenece, quotient
 }
@@ -48,7 +47,7 @@ func main() {
 	fmt.Println(swapValues(21, 11))
 
 	// Task 4: Multiple Return Values
-	s, p, d, q := mathOperations(21, 9)
+	s, p, d, q := mathOperations(21, 0)
 	fmt.Println("Sum:", s, "Product:", p, "Difference:", d, "Quotient:", q)
 
 }
